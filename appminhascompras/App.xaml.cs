@@ -1,7 +1,46 @@
-﻿namespace appminhascompras
+﻿using appminhascompras.Helpers;
+
+namespace appminhascompras
 {
     public partial class App : Application
     {
+        static SQliteDatabaseHelper _db;
+
+        public static SQliteDatabaseHelper Db 
+        {
+
+            get 
+            
+            {
+                if (_db == null) 
+                {
+
+                    string path = Path.Combine(
+                        Environment.GetFolderPath(
+                            Environment.SpecialFolder.LocalApplicationData),
+                            "banco_sqlite_compras_db3"
+
+                        );
+
+                    _db = new SQliteDatabaseHelper(".... db3");
+                
+                
+                
+                }
+
+
+
+
+
+                return _db;
+            
+            
+            }
+        
+        
+        
+        }
+
         public App()
         {
             InitializeComponent();
