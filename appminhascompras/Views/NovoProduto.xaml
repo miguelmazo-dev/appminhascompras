@@ -19,7 +19,7 @@
         <Entry x:Name="txt_descricao"/>
         <Label Text="Quantidade"/>
         <Entry x:Name="txt_quantidade" Keyboard="Numeric"/>
-        <Label Text="Preço Unitário"/>
+        <Label Text="Preço Unitário:"/>
         <Entry x:Name="txt_preco" Keyboard="Numeric"/>
     </VerticalStackLayout>
 </ContentPage>

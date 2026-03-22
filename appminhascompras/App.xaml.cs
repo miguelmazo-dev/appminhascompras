@@ -22,7 +22,7 @@ namespace appminhascompras
 
                         );
 
-                    _db = new SQliteDatabaseHelper(".... db3");
+                    _db = new SQliteDatabaseHelper(path);
                 
                 
                 
